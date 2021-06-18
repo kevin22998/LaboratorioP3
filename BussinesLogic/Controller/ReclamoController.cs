@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CommonSolution.DTO;
+using DataAccess.Persistencia;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
