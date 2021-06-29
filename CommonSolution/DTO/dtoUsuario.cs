@@ -8,12 +8,12 @@ namespace CommonSolution.DTO
 {
     public class dtoUsuario
     {
-        public string nombreUsuario;
-        public string contraseña;
-        public string nombre;
-        public string apellido;
-        public string correo;
-        public string telefono;
-        public string tipo;
+        public string nombreUsuario { get; set; }
+        public string contraseña { get; set; }
+        public string nombre { get; set; }
+        public string apellido { get; set; }
+        public string correo { get; set; }
+        public string telefono { get; set; }
+        public string tipo { get; set; }
     }
 }

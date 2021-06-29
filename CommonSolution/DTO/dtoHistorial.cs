@@ -10,10 +10,10 @@ namespace CommonSolution.DTO
     {
         //public enum ESTADOS :{ PENDIENTE, ASIGNADO, EN_PROCESO, RESUELTO, DESESTIMADO };
 
-        public string estado;
-        public string fechaHora;
-        public string comentario;
-        public int id;
-        public int nroReclamo;
+        public string estado { get; set; }
+        public string fechaHora { get; set; }
+        public string comentario { get; set; }
+        public int id { get; set; }
+        public int nroReclamo { get; set; }
     }
 }

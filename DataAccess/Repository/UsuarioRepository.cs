@@ -110,10 +110,10 @@ namespace DataAccess.Repository
             List<dtoReclamo> cargar=new List<dtoReclamo>();
             using (LaboratorioEntities context = new LaboratorioEntities())
             {
-                Usuario entity = context.Usuario.AsNoTracking().FirstOrDefault(a => a.nombreUsusario == usuario);
-                cargar = this._reclamoMapper.MaptoDto(entity.Reclamo);  //Reclamo es lista?
+                Usuario entity = context.Usuario.AsNoTracking().Include("Reclamo").FirstOrDefault(a => a.nombreUsusario == usuario);
+                cargar = this._reclamoMapper.MaptoDto(entity.Reclamo.ToList());
 
-                //cargar.Add() context.Reclamo.include("Usuario").AsNoTranking().where(a=>a.)   retorna lista reclamo de usuario
+                
             }
             return cargar;
         }

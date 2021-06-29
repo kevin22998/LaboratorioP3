@@ -35,5 +35,13 @@ namespace BussinesLogic.Controller
                 this._repository.getZonaRepository().EliminarZona(nro);
             }
         }
+        public List<dtoZona> ListarZona()
+        {
+            List<dtoZona> cargar = new List<dtoZona>();
+
+            cargar = this._repository.getZonaRepository().getListarZonas();
+
+            return cargar;
+        }
     }
 }

@@ -27,8 +27,8 @@ namespace DataAccess.Mapper
 
             cargar.id = dto.id;
             cargar.numeroZona = dto.nroZona;
-            cargar.latitud = dto.latitud.ToString();
-            cargar.longitud = dto.longitud.ToString();
+            cargar.latitud = dto.latitud;
+            cargar.longitud = dto.longitud;
 
             return cargar;
         }

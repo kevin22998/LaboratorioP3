@@ -8,12 +8,12 @@ namespace CommonSolution.DTO
 {
     public class dtoZona
     {
-        public int numero;
-        public string nombre;
-        public string color;
+        public int numero { get; set; }
+        public string nombre { get; set; }
+        public string color { get; set; }
 
-        public List<dtoGPS> colGps;
-       /* public dtoReclamo zonaReclamo;
-        public List<dtoCuadrilla> colCuadrilla;*/
+        public List<dtoGPS> colGps { get; set; }
+        /* public dtoReclamo zonaReclamo;
+         public List<dtoCuadrilla> colCuadrilla;*/
     }
 }

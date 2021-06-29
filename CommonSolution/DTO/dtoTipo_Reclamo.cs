@@ -8,9 +8,9 @@ namespace CommonSolution.DTO
 {
     public class dtoTipo_Reclamo
     {
-        public int numero;
-        public string nombre;
-        public string descripcion;
-        public int nroReclamo;
+        public int numero { get; set; }
+        public string nombre { get; set; }
+        public string descripcion { get; set; }
+        public int nroReclamo { get; set; }
     }
 }

@@ -89,7 +89,19 @@ namespace DataAccess.Repository
 
             using (LaboratorioEntities context=new LaboratorioEntities())
             {
-                cargar = context.Historial.AsNoTracking().Where(a => a.nroReclamo == nro).ToList(); //Corregir!!!
+                cargar = this._historialMapper.MaptoDto(context.Historial.AsNoTracking().Where(a => a.nroReclamo == nro).ToList());
+            }
+
+            return cargar;
+        }
+        public List<dtoReclamo> getListarReclamo()
+        {
+            List<dtoReclamo> cargar = new List<dtoReclamo>();
+
+            using (LaboratorioEntities context=new LaboratorioEntities())
+            {
+                List<Reclamo> entity = context.Reclamo.AsNoTracking().Select(a => a).ToList();
+                cargar = this._reclamoMapper.MaptoDto(entity);
             }
 
             return cargar;

@@ -109,10 +109,6 @@
       <Project>{f1e2036e-e49c-41ad-ad0c-a1ca097b915b}</Project>
       <Name>CommonSolution</Name>
     </ProjectReference>
-    <ProjectReference Include="..\LaboratorioP3\LaboratorioP3.csproj">
-      <Project>{382c38f9-4b79-4672-a71e-26bcd04cf0ef}</Project>
-      <Name>LaboratorioP3</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

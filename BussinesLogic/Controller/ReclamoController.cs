@@ -41,15 +41,23 @@ namespace BussinesLogic.Controller
         }
         public List<dtoReclamo> ConsultaColReclamos(string idUsuario)
         {
-            List<dtoReclamo> retornar = this._repository.getUsuarioRepository().getColReclamoCiudadano(idUsuario);  //Corregir
+            List<dtoReclamo> retornar = this._repository.getUsuarioRepository().getColReclamoCiudadano(idUsuario);
 
             return retornar;
         }
-        public List<dtoHistorial> ConsultaHistorialReclamo(int nro)    //Arreglar funcion
+        public List<dtoHistorial> ConsultaHistorialReclamo(int nro)
         {
             List<dtoHistorial> cargar = new List<dtoHistorial>();
 
             cargar = this._repository.getReclamoRepository().getHistorialReclamo(nro);
+
+            return cargar;
+        }
+        public List<dtoReclamo> getcolReclamo()
+        {
+            List<dtoReclamo> cargar = new List<dtoReclamo>();
+
+            cargar = this._repository.getReclamoRepository().getListarReclamo();
 
             return cargar;
         }

@@ -89,5 +89,17 @@ namespace DataAccess.Repository
                 }
             }
         }
+        public List<dtoZona> getListarZonas()
+        {
+            List<dtoZona> cargar = new List<dtoZona>();
+
+            using (LaboratorioEntities context=new LaboratorioEntities())
+            {
+                List <Zona> colZona = context.Zona.AsNoTracking().Select(s => s).ToList();
+                cargar = this._ZonaMapper.MaptoDto(colZona);
+            }
+
+            return cargar;
+        }
     }
 }

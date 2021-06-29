@@ -8,8 +8,8 @@ namespace CommonSolution.DTO
 {
     public class dtoCuadrilla
     {
-        public int numero;
-        public string nombre;
-        public int? cantPeones;
+        public int numero { get; set; }
+        public string nombre { get; set; }
+        public int? cantPeones { get; set; }
     }
 }
