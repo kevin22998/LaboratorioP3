@@ -8,8 +8,8 @@ namespace CommonSolution.DTO
 {
     public class dtoGPS
     {
-        public float latitud { get; set; }
-        public float longitud { get; set; }
+        public string latitud { get; set; }
+        public string longitud { get; set; }
         public int id { get; set; }
         public int nroZona { get; set; }
     }

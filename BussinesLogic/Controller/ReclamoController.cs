@@ -19,7 +19,7 @@ namespace BussinesLogic.Controller
             //cargar.nroCuadrilla = ???
 
             dtoReclamo cargar = new dtoReclamo();
-            //cargar.observaciones = observacion;   //Falta añadir a la Base de datos
+            cargar.observaciones = observacion;
             cargar.TipoReclamo = dtoTReclamo;
             //cargar.nroReclamo= Operacion creciente
             cargar.fechaHora = DateTime.Now;

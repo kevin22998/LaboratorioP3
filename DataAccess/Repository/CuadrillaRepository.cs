@@ -14,7 +14,10 @@ namespace DataAccess.Repository
     public class CuadrillaRepository
     {
         private CuadrillaMapper _CuadrillaMapper;
-
+        public CuadrillaRepository()
+        {
+            this._CuadrillaMapper = new CuadrillaMapper();
+        }
         public void AltaCuadrilla(dtoCuadrilla dto)
         {
             using (LaboratorioEntities context=new LaboratorioEntities())

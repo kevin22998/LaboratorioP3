@@ -17,9 +17,9 @@ namespace DataAccess.Model
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Zona()
         {
+            this.Cuadrilla = new HashSet<Cuadrilla>();
             this.Gps = new HashSet<Gps>();
             this.Reclamo = new HashSet<Reclamo>();
-            this.Cuadrilla = new HashSet<Cuadrilla>();
         }
     
         public int numero { get; set; }
@@ -27,10 +27,10 @@ namespace DataAccess.Model
         public string nombre { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Cuadrilla> Cuadrilla { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Gps> Gps { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Reclamo> Reclamo { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Cuadrilla> Cuadrilla { get; set; }
     }
 }

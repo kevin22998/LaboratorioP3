@@ -17,18 +17,18 @@ namespace DataAccess.Model
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Cuadrilla()
         {
-            this.Reclamo = new HashSet<Reclamo>();
             this.Usuario = new HashSet<Usuario>();
+            this.Reclamo = new HashSet<Reclamo>();
         }
     
         public int numero { get; set; }
         public string nombre { get; set; }
         public Nullable<int> cantidadPeones { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Reclamo> Reclamo { get; set; }
         public virtual Zona Zona { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Usuario> Usuario { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Reclamo> Reclamo { get; set; }
     }
 }

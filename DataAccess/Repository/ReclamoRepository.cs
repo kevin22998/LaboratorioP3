@@ -15,7 +15,11 @@ namespace DataAccess.Repository
     {
         private ReclamoMapper _reclamoMapper;
         private HistorialMapper _historialMapper;
-
+        public ReclamoRepository()
+        {
+            this._reclamoMapper = new ReclamoMapper();
+            this._historialMapper = new HistorialMapper();
+        }
         public void AltaReclamo(dtoReclamo dto)
         {
             using (LaboratorioEntities context = new LaboratorioEntities())

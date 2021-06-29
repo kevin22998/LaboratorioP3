@@ -16,8 +16,8 @@ namespace DataAccess.Model
     {
         public int id { get; set; }
         public int numeroZona { get; set; }
-        public System.Data.Entity.Spatial.DbGeography latitud { get; set; }
-        public System.Data.Entity.Spatial.DbGeography longitud { get; set; }
+        public string latitud { get; set; }
+        public string longitud { get; set; }
     
         public virtual Zona Zona { get; set; }
     }

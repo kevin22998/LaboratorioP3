@@ -27,9 +27,10 @@ namespace DataAccess.Model
         public int nroZona { get; set; }
         public string observacionCuadrilla { get; set; }
         public System.DateTime fechayhora { get; set; }
-        public System.Data.Entity.Spatial.DbGeography longitud { get; set; }
-        public System.Data.Entity.Spatial.DbGeography latitud { get; set; }
         public string estado { get; set; }
+        public string observaciones { get; set; }
+        public string latitud { get; set; }
+        public string longitud { get; set; }
     
         public virtual Cuadrilla Cuadrilla { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

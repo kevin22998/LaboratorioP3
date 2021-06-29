@@ -14,8 +14,8 @@ namespace DataAccess.Mapper
         {
             dtoGPS cargar = new dtoGPS();
 
-            cargar.latitud = float.Parse(entity.latitud.ToString());
-            cargar.longitud = float.Parse(entity.longitud.ToString());
+            cargar.latitud = entity.latitud;
+            cargar.longitud = entity.longitud;
             cargar.id = entity.id;
             cargar.nroZona = entity.numeroZona;
 

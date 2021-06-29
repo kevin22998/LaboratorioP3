@@ -8,9 +8,9 @@ namespace CommonSolution.DTO
 {
     public class dtoReclamo
     {
-        //public string observaciones{ get; set; }
-        public float ubicacionLatitud { get; set; }
-        public float ubicacionLongitud { get; set; }
+        public string observaciones{ get; set; }
+        public string ubicacionLatitud { get; set; }
+        public string ubicacionLongitud { get; set; }
         public int nroReclamo { get; set; }
         public DateTime fechaHora { get; set; }
         public int nroZona { get; set; }

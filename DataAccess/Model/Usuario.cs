@@ -28,8 +28,8 @@ namespace DataAccess.Model
         public string telefono { get; set; }
         public string tipo { get; set; }
     
+        public virtual Cuadrilla Cuadrilla { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Reclamo> Reclamo { get; set; }
-        public virtual Cuadrilla Cuadrilla { get; set; }
     }
 }

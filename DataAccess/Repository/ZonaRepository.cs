@@ -15,6 +15,11 @@ namespace DataAccess.Repository
     {
         private ZonaMapper _ZonaMapper;
         private GPSMapper _GPSMapper;
+        public ZonaRepository()
+        {
+            this._ZonaMapper = new ZonaMapper();
+            this._GPSMapper = new GPSMapper();
+        }
         public void AltaZona(dtoZona dto)
         {
             using (LaboratorioEntities context = new LaboratorioEntities())

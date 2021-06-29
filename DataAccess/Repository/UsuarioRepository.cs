@@ -15,6 +15,11 @@ namespace DataAccess.Repository
     {
         private UsuarioMapper _usuarioMapper;
         private ReclamoMapper _reclamoMapper;
+        public UsuarioRepository()
+        {
+            this._usuarioMapper = new UsuarioMapper();
+            this._reclamoMapper = new ReclamoMapper();
+        }
         public void AltaCiudadano(dtoUsuario dto)
         {
             using (LaboratorioEntities context = new LaboratorioEntities())

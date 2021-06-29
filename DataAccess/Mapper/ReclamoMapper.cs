@@ -23,6 +23,7 @@ namespace DataAccess.Mapper
             cargar.fechaHora = entity.fechayhora;
             cargar.estadoReclamo = entity.estado;
             cargar.observacionCuadrilla = entity.observacionCuadrilla;
+            cargar.observaciones = entity.observaciones;
 
             return cargar;
         }
@@ -39,6 +40,7 @@ namespace DataAccess.Mapper
             cargar.fechayhora = dto.fechaHora;
             cargar.estado = dto.estadoReclamo;
             cargar.observacionCuadrilla = dto.observacionCuadrilla;
+            cargar.observaciones = dto.observaciones;
 
             return cargar;
         }
