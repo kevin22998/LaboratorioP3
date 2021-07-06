@@ -80,5 +80,17 @@ namespace DataAccess.Repository
 
             return cargar;
         }
+        public List<dtoCuadrilla> getcolCuadrilla()
+        {
+            List<dtoCuadrilla> cargar = new List<dtoCuadrilla>();
+
+            using (LaboratorioEntities context = new LaboratorioEntities())
+            {
+                List<Cuadrilla> entity = context.Cuadrilla.AsNoTracking().Select(a => a).ToList();
+                cargar = this._CuadrillaMapper.MaptoDto(entity);
+            }
+
+            return cargar;
+        }
     }
 }

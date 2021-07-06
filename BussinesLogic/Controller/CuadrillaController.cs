@@ -11,6 +11,10 @@ namespace BussinesLogic.Controller
     public class CuadrillaController
     {
         private Repository _repository;
+        public CuadrillaController()
+        {
+            this._repository = new Repository();
+        }
 
         public void AltaCuadrilla(dtoCuadrilla dto)
         {
@@ -33,6 +37,14 @@ namespace BussinesLogic.Controller
             {
                 cargar = this._repository.getCuadrillaRepository().getCuadrilla(dto.numero);
             }
+            return cargar;
+        }
+        public List<dtoCuadrilla> getListarCuadrillas()
+        {
+            List<dtoCuadrilla> cargar = new List<dtoCuadrilla>();
+
+            cargar = this._repository.getCuadrillaRepository().getcolCuadrilla();
+
             return cargar;
         }
 

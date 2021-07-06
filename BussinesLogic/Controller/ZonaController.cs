@@ -11,6 +11,10 @@ namespace BussinesLogic.Controller
     public class ZonaController
     {
         private Repository _repository;
+        public ZonaController()
+        {
+            this._repository = new Repository();
+        }
         public void AltaZona(dtoZona dto)  //Ingresar zona
         {
             if (!this._repository.getZonaRepository().ExisteZona(dto.numero))

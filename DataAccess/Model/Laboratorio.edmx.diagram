@@ -7,13 +7,13 @@
       <Diagram DiagramId="317e8ecb87a145b5bd238146886590c6" Name="Diagram1">
         <EntityTypeShape EntityType="LaboratorioModel.Cuadrilla" Width="1.5" PointX="0.75" PointY="6" IsExpanded="true" />
         <EntityTypeShape EntityType="LaboratorioModel.Historial" Width="1.5" PointX="8.375" PointY="8.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="LaboratorioModel.TipoReclamo" Width="1.5" PointX="7.5" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LaboratorioModel.TipoReclamo" Width="1.5" PointX="7.25" PointY="5.625" IsExpanded="true" />
         <EntityTypeShape EntityType="LaboratorioModel.Usuario" Width="1.5" PointX="3" PointY="9.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="LaboratorioModel.Zona" Width="1.5" PointX="3" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="LaboratorioModel.Zona" Width="1.5" PointX="5.25" PointY="12.625" IsExpanded="true" />
         <AssociationConnector Association="LaboratorioModel.Cuadrilla_Zona" ManuallyRouted="false" />
         <AssociationConnector Association="LaboratorioModel.Funcionario_Cuadrilla" ManuallyRouted="false" />
-        <EntityTypeShape EntityType="LaboratorioModel.Gps" Width="1.5" PointX="5.625" PointY="13.5" />
-        <EntityTypeShape EntityType="LaboratorioModel.Reclamo" Width="1.5" PointX="5.5" PointY="6.5" />
+        <EntityTypeShape EntityType="LaboratorioModel.Gps" Width="1.5" PointX="7.625" PointY="13.375" />
+        <EntityTypeShape EntityType="LaboratorioModel.Reclamo" Width="1.5" PointX="5.75" PointY="8" />
         <AssociationConnector Association="LaboratorioModel.FK_Reclamo_Cuadrilla" />
         <AssociationConnector Association="LaboratorioModel.FK_Gps_Gps" />
         <AssociationConnector Association="LaboratorioModel.FK_Historial_Reclamo" />

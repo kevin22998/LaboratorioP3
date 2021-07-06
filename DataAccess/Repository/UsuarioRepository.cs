@@ -117,8 +117,6 @@ namespace DataAccess.Repository
             {
                 Usuario entity = context.Usuario.AsNoTracking().Include("Reclamo").FirstOrDefault(a => a.nombreUsusario == usuario);
                 cargar = this._reclamoMapper.MaptoDto(entity.Reclamo.ToList());
-
-                
             }
             return cargar;
         }

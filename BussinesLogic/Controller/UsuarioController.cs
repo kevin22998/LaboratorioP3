@@ -11,6 +11,10 @@ namespace BussinesLogic.Controller
     public class UsuarioController
     {
         private Repository _repository;
+        public UsuarioController()
+        {
+            this._repository = new Repository();
+        }
 
         public void RegistroUsuarioCiudadano(dtoUsuario dto)
         {

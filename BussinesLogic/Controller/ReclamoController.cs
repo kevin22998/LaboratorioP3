@@ -11,6 +11,10 @@ namespace BussinesLogic.Controller
     public class ReclamoController
     {
         private Repository _repository;
+        public ReclamoController()
+        {
+            this._repository = new Repository();
+        }
         public void IngresoReclamo(dtoTipo_Reclamo dtoTReclamo, string observacion, dtoGPS ubicacion, dtoUsuario persona)
         {
             //Requiero operacion que lo cargue dependiendo de la ubicacion

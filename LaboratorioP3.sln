@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonSolution", "CommonSol
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCLaboratorio", "MVCLaboratorio\MVCLaboratorio.csproj", "{F8CE9335-95C7-48E6-826E-DB32ED0DF83F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCCliente", "MVCCliente\MVCCliente.csproj", "{60E21A26-55A4-4D8D-B874-648C512E59AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{F8CE9335-95C7-48E6-826E-DB32ED0DF83F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8CE9335-95C7-48E6-826E-DB32ED0DF83F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8CE9335-95C7-48E6-826E-DB32ED0DF83F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60E21A26-55A4-4D8D-B874-648C512E59AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60E21A26-55A4-4D8D-B874-648C512E59AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60E21A26-55A4-4D8D-B874-648C512E59AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60E21A26-55A4-4D8D-B874-648C512E59AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,6 +58,7 @@ Global
 		{4FF36A2B-ACCA-4EF1-B4A0-DFFA2F501C1B} = {7E04B71E-1E25-43A9-AE08-F4D1192C945C}
 		{F1E2036E-E49C-41AD-AD0C-A1CA097B915B} = {6910A3E8-360A-4D4F-BDD3-FCC4DA2EA088}
 		{F8CE9335-95C7-48E6-826E-DB32ED0DF83F} = {70372D5C-7B54-43DB-8EDC-F749F69CFCE2}
+		{60E21A26-55A4-4D8D-B874-648C512E59AD} = {70372D5C-7B54-43DB-8EDC-F749F69CFCE2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A5029FB3-9391-4AF7-B6C2-4C4D3E9D403B}
